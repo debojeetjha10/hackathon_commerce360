@@ -10,6 +10,9 @@ import SignUp from './SignUp'
 import NavBar from './NavBar'
 import Login from './Login'
 import Footer from './Footer'
+import Home from './Home'
+import MyCatalog from './MyCatalogs';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +24,8 @@ function App() {
       <Routes>
         <Route path = '/register' element= {<SignUp />}></Route>
         <Route path = '/' element= {<Login />}></Route>
+        <Route path = '/home' element = {<Home/>}></Route>
+        <Route path= '/Mycatalog' element = { <MyCatalog/> }></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
