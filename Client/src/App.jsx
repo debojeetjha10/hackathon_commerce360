@@ -11,6 +11,12 @@ import Home from './Home'
 import MyCatalog from './MyCatalogs';
 import CreateNewProduct from './pages/product/createNewProduct';
 import CreatePriceRules from './pages/pricerules/createpricerules';
+import PriceAProduct from './PriceAProduct';
+import CreateMetric from './CreateMetric';
+import ChannelsAndAudience from './ChannelsAndAudience'
+import PriceDefault from './PriceDefaults';
+import TaxAndBilling from './TaxAndBilling';
+import FinanceAndRevenue from './FinanceAndRevenue';
 
 
 function App() {
@@ -23,10 +29,15 @@ function App() {
         <Route path = '/register' element= {<SignUp />}></Route>
         <Route path = '/' element= {<Login />}></Route>
         <Route path = '/home' element = {<Home/>}></Route>
-        <Route path='/Mycatalog' element={<MyCatalog />}></Route>
-        <Route path= '/createproduct' element = { <CreateNewProduct/> }></Route>
         <Route path= '/createproduct' element = { <CreateNewProduct/> }></Route>
         <Route path= '/createPriceRules' element = { <CreatePriceRules/> }></Route>
+        <Route path= '/Mycatalog' element = { <MyCatalog/> }></Route>
+        <Route path= '/PriceAProduct' element = {<PriceAProduct/>}></Route>
+        <Route path= '/CreateMetric' element = {<CreateMetric/>}></Route>
+        <Route path= '/ChannelsAndAudience' element = {<ChannelsAndAudience/>}></Route>
+        <Route path= '/PriceDefault' element = {<PriceDefault/>}></Route>
+        <Route path= '/TaxAndBilling' element = {<TaxAndBilling/>}></Route>
+        <Route path= '/FinanceAndRevenue' element = {<FinanceAndRevenue/>}></Route>
 
       </Routes>
       <Footer />
