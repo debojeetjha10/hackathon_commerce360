@@ -1,0 +1,13 @@
+.navbarus {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbardiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
