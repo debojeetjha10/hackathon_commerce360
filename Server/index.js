@@ -64,9 +64,7 @@ app.post('/login',(req,res) => {
 
 app.post('/catalogData',(req,res) => {
     const {value} = req.body
-    console.log("---------------------------------------")
     console.log(value)
-    console.log("=======================================")
     CatalogModel.find({productname:value})
     .then(data => {
         console.log(data.attributes)

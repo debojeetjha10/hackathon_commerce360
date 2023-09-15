@@ -7,7 +7,7 @@ import SignUp from './SignUp'
 import NavBar from './NavBar'
 import Login from './Login'
 import Footer from './Footer'
-import Home from './Home'
+import Home from './pages/landing'
 import MyCatalog from './MyCatalogs';
 import CreateNewProduct from './pages/product/createNewProduct';
 import CreatePriceRules from './pages/pricerules/createpricerules';
@@ -17,6 +17,8 @@ import ChannelsAndAudience from './ChannelsAndAudience'
 import PriceDefault from './PriceDefaults';
 import TaxAndBilling from './TaxAndBilling';
 import FinanceAndRevenue from './FinanceAndRevenue';
+import AllPricings from './AllPrincings';
+import AllPolicies from './AllPolicies';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path= '/PriceDefault' element = {<PriceDefault/>}></Route>
         <Route path= '/TaxAndBilling' element = {<TaxAndBilling/>}></Route>
         <Route path= '/FinanceAndRevenue' element = {<FinanceAndRevenue/>}></Route>
+        <Route path= '/AllPricings' element = {<AllPricings/>}></Route>
+        <Route path= '/AllPolicies' element = {<AllPolicies/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

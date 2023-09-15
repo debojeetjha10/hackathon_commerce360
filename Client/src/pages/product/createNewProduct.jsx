@@ -6,7 +6,8 @@ function CreateNewProduct() {
     const { register, handleSubmit} = useForm()
   return (
     <div className="createnewproduct">
-      <h2>Create a New Product</h2>
+      <h4 className="text-primary">Create a New Product</h4>
+      <hr className="text-dark"/>
       <p>Fill in the Details below</p>
       <form className="newproductform">
         <label>

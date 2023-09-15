@@ -13,7 +13,6 @@ function PriceAProduct() {
     return (
         <div className="justify-content-center vh-150 m-4">
             <div className={`row w-100`}>
-                <div className="col-12 text-primary text-center"><h2>Commerce360</h2></div>
                 <h4 className="text-primary">Price A Product</h4>
                 <hr className="text-dark"/>
                 <div className="w-75 m-auto p-5 border border-dark rounded">
