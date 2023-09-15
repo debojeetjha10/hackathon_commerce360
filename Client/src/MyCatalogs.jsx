@@ -1,30 +1,37 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import $ from 'jquery'
+
 import axios from "axios";
 
-function MyCatalog(){
-    const Catalogs_list = ["CRM","DynamicERP","DynamicNAV","MineCraft","MixedReality"];
-    const [selectedCatalog,setSelectedCatalog] = useState()
-    const [tableData,setTableData] = useState([])
- 
-    const Catalogs = Catalogs_list.map((catalog)=>{
-        return <li>{catalog}</li>;
-    });
+function MyCatalog() {
+  const Catalogs_list = [
+    "CRM",
+    "DynamicERP",
+    "DynamicNAV",
+    "MineCraft",
+    "MixedReality",
+  ];
+  const [selectedCatalog, setSelectedCatalog] = useState();
+  const [tableData, setTableData] = useState([]);
 
-    const populateData = (e) => {
-        e.preventDefault()
-        var value =  e.target.textContent
-        setSelectedCatalog(value)
-        console.log("fetch data for",value)
+  const Catalogs = Catalogs_list.map((catalog) => {
+    return <li>{catalog}</li>;
+  });
 
-        axios.post('http://localhost:3001/catalogData',{value})
-        .then(tableData => {
-            console.log(tableData.data[0].attributes)
-            setTableData(tableData.data[0].attributes)
-        })
-        .catch(err => console.log(err))
-    }
+  const populateData = (e) => {
+    e.preventDefault();
+    var value = e.target.textContent;
+    setSelectedCatalog(value);
+    console.log("fetch data for", value);
+
+    axios
+      .post("http://localhost:3001/catalogData", { value })
+      .then((tableData) => {
+        console.log(tableData.data[0].attributes);
+        setTableData(tableData.data[0].attributes);
+      })
+      .catch((err) => console.log(err));
+  };
 
     return (
         <div className="justify-content-center vh-100 m-4">
@@ -76,4 +83,4 @@ function MyCatalog(){
     )
 }
 
-export default MyCatalog
+export default MyCatalog;
