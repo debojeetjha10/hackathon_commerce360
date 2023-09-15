@@ -9,11 +9,22 @@ import ChannelsAndAudience from "../ChannelsAndAudience";
 import PriceDefault from "../PriceDefaults";
 import TaxAndBilling from "../TaxAndBilling";
 import FinanceAndRevenue from "../FinanceAndRevenue";
-
+import CreateNewProduct from "../pages/product/createNewProduct";
+import CreatePriceRules from "../pages/pricerules/createpricerules";
 export const privateRoutes = [
   {
     path: "/home",
     element: <Home />,
+    children: [],
+  },
+  {
+    path: "/createproduct",
+    element: <CreateNewProduct />,
+    children: [],
+  },
+  {
+    path: "/createPriceRules",
+    element: <CreatePriceRules />,
     children: [],
   },
   {
