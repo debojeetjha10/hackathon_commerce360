@@ -11,10 +11,10 @@ function LandingPage() {
               <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/Mycatalog">View All Catalog</Link></h4>
             </li>
             <li>
-              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="">View All Products</Link></h4>
+              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/ViewAllProduct">View All Products</Link></h4>
             </li>
             <li>
-              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/createproduct">Create New Product</Link></h4>
+              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/CreateNewProduct">Create New Product</Link></h4>
             </li>
             <li>
               <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="">Modify Existing Product</Link></h4>

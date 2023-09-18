@@ -1,6 +1,6 @@
 import React from "react";
 
-function ViewPriceRule () {
+function ViewBundle () {
     return (
         <div className="justify-content-center vh-100 m-4">
             <div className="row w-100">
@@ -23,27 +23,27 @@ function ViewPriceRule () {
                             <tbody>
                                 <tr>
                                     <td>YES</td>
-                                    <td>Azure Compute Discount for New Customers.</td>
+                                    <td>Inclusion</td>
                                     <td>
-                                        <b>FROM</b> Jan-1-2023 to Dec-31-2023 <br/><b>IF</b> no Compute Asset exists <br/><b>THEN</b> give 10% discount  <br/> <b>ON</b> Azure Compute Product family <br/> <b>FOR</b> All Customers
+                                    FROM Jan-1-2023 to Dec-31-2023​<br/>IF Office E7 selected​<br/>THEN ADD​<br/>PRODUCT Office Co-PIlot​<br/>FOR All Customers
                                     </td>
                                     <td>Swapnil</td>
                                     <td><a className="text-primary">Edit</a>/<a className="text-primary">/Delete</a></td>
                                 </tr>
                                 <tr>
                                     <td>YES</td>
-                                    <td>Europe Promotion<b> fo</b>r Office E5 Product </td>
+                                    <td>Exclusion </td>
                                     <td>
-                                    <b>FROM</b> Jan-1-2023 to Dec-31-2023​ <br/><b>IF</b> Pricelist name is Pricelist - EUROPE​<br/><b>THEN</b> give 20% discount ​<br/><b>ON</b> Azure Compute Product family ​<br/><b>FOR</b> All Customers
+                                    FROM Jan-1-2023 to Dec-31-2023​<br/>IF Office E3 selected​<br/>THEN REMOVE/HIDE​<br/>PRODUCT Office Co-Pilot​<br/>FOR All Customers
                                     </td>
                                     <td>Debojeet</td>
                                     <td><a className="text-primary">Edit</a>/<a className="text-primary">/Delete</a></td>
                                 </tr>
                                 <tr>
                                     <td>NO</td>
-                                    <td>Customer specific discount - Walmart</td>
+                                    <td>Recommended</td>
                                     <td>
-                                    <b>FROM</b> Jan-1-2023 to Dec-31-2023​<br/><b>IF</b> Pricelist name is Pricelist - NA​<br/><b>THEN</b> give 3.5% discount ​<br/><b>ON</b> All Products​<br/><b>FOR</b> Customer Account as Walmart Inc
+                                    FROM Jan-1-2023 to Dec-31-2023​<br/>IF Windows E5 or E7  selected​<br/>THEN RECOMMEND​<br/>PRODUCT Office Co-Pilot​<br/>FOR All Customers
                                     </td>
                                     <td>Ronak</td>
                                     <td><a className="text-primary">Edit</a>/<a className="text-primary">/Delete</a></td>
@@ -54,9 +54,9 @@ function ViewPriceRule () {
                     </div>
                 </div>
             </div>
-            <button className="btn btn-primary">Add New Price Rule</button>
+            <button className="btn btn-primary">Add New bundle Rule</button>
         </div>
     )
 }
 
-export default ViewPriceRule
+export default ViewBundle

@@ -124,7 +124,7 @@ function CreateMetric() {
                                 
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                                     <label class="form-check-label" for="inlineCheckbox1">CSP</label>
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                    <input class="form-check-input" checked type="checkbox" id="inlineCheckbox1" value="option1" />
                                     <label class="form-check-label" for="inlineCheckbox1">VL</label>
 
                             </div>
@@ -133,9 +133,9 @@ function CreateMetric() {
                         <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example2">Audience</label><br/>
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <input class="form-check-input"checked type="checkbox" id="inlineCheckbox1" value="option1" />
                                 <label class="form-check-label" for="inlineCheckbox1">Commercial</label>
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <input class="form-check-input" checked type="checkbox" id="inlineCheckbox1" value="option1" />
                                 <label class="form-check-label" for="inlineCheckbox1">GOV</label>
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
                                 <label class="form-check-label" for="inlineCheckbox1">EDU</label>
@@ -150,7 +150,7 @@ function CreateMetric() {
                         <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example1">Default Quanitity</label>
-                                <input type="text" id="form6Example2" className="form-control"/>
+                                <input type="text" id="form6Example2"  defaultValue="1" className="form-control"/>
                             </div>
                         </div>
 
@@ -174,7 +174,7 @@ function CreateMetric() {
                         <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example1">Auto Renew</label>
-                                <input type="text" id="form6Example2" className="form-control"/>
+                                <input type="text" id="form6Example2" defaultValue="Yes" className="form-control"/>
                             </div>
                         </div>
                         </div>
@@ -183,7 +183,7 @@ function CreateMetric() {
                         <div className="row mt-3">
                             <div className="col">
                                 <div className="form-outline mb-4">
-                                <a className="btn btn-primary btn-block mb-4" onClick={submitMetric}>Submit</a>
+                                <a className="btn btn-primary btn-block mb-4" onClick={submitMetric}>Proceed To Tax and Finance</a>
                                 </div>
                             </div>
                             <div className="col">

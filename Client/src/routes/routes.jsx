@@ -9,18 +9,42 @@ import ChannelsAndAudience from "../ChannelsAndAudience";
 import PriceDefault from "../PriceDefaults";
 import TaxAndBilling from "../TaxAndBilling";
 import FinanceAndRevenue from "../FinanceAndRevenue";
-import CreateNewProduct from "../pages/product/createNewProduct";
+import CreateNewProduct1 from "../pages/product/createNewProduct";
 import CreatePriceRules from "../pages/pricerules/createpricerules";
 import AllPricings from "../AllPrincings";
 import AllPolicies from "../AllPolicies";
 import NavBar from "../NavBar";
 import SummaryCreatePrice from "../SummaryCreatePrice";
 import ViewPriceRule from "../ViewPriceRule";
+import ViewAllProduct from "../pages/ViewAllProduct.jsx";
+import CreateABundle from "../CreateABundle";
+import CreateNewProduct from "../pages/CreateAProduct";
+import ViewBundle from "../Viewbundle";
 
 export const privateRoutes = [
   {
     path: "/home",
     element: <Home />,
+    children: [],
+  },
+  {
+    path: "/ViewBundle",
+    element: <ViewBundle />,
+    children: [],
+  },
+  {
+    path: "/CreateNewProduct",
+    element: <CreateNewProduct />,
+    children: [],
+  },
+  {
+    path: "/CreateABundle",
+    element: <CreateABundle />,
+    children: [],
+  },
+  {
+    path: "/ViewAllProduct",
+    element: <ViewAllProduct />,
     children: [],
   },
   {
@@ -34,8 +58,8 @@ export const privateRoutes = [
     children: [],
   },
   {
-    path: "/createproduct",
-    element: <CreateNewProduct />,
+    path: "/createproduct1",
+    element: <CreateNewProduct1 />,
     children: [],
   },
   {

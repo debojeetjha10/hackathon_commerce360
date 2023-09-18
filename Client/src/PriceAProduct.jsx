@@ -25,7 +25,7 @@ function PriceAProduct() {
                                     id="cars"
                                     name="cars"
                                 >
-                                    <option value="Standard Price">PriceList/North America</option>
+                                    <option value="Standard Price">PriceList-North America</option>
                                     <option value="License Fee">License Fee</option>
                                     <option value="Subscription Fee">Subscription Fee</option>
                                     <option value="Installation Fee">Installation Fee</option>
@@ -36,8 +36,8 @@ function PriceAProduct() {
                             </div>
                             <div className="col">
                             <div className="form-outline">
-                                <label className="form-label" for="form6Example2">Product</label>
-                                <input type="text" id="form6Example2" className="form-control" />
+                                <label className="form-label" for="form6Example2">Product Name</label>
+                                <input type="text" id="form6Example2" defaultValue="Bundle Confetti" className="form-control" />
                             </div>
                             </div>
                             <div className="col">
@@ -98,7 +98,7 @@ function PriceAProduct() {
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example6">
-                    Preice Method
+                    Price Method
                   </label>
                   <select
                     style={{ height: "35px" }}
@@ -130,24 +130,26 @@ function PriceAProduct() {
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example9">
-                    Cost
-                  </label>
+                    Cost (USD)
+                  </label> 
                   <input
                     type="number"
                     id="form6Example9"
                     className="form-control"
+                    defaultValue="150.00"
                   />
                 </div>
               </div>
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example10">
-                    Base Price
+                    Base Price (USD)
                   </label>
                   <input
                     type="number"
                     id="form6Example10"
                     className="form-control"
+                    defaultValue="165.00"
                   />
                 </div>
               </div>
@@ -180,12 +182,13 @@ function PriceAProduct() {
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example12">
-                    Min Price
+                    Min Price (USD)
                   </label>
                   <input
                     type="number"
                     id="form6Example12"
                     className="form-control"
+                    defaultValue="155.00"
                   />
                 </div>
               </div>
@@ -195,9 +198,10 @@ function PriceAProduct() {
                     Max ADJ %
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     id="form6Example13"
                     className="form-control"
+                    defaultValue="10%"
                   />
                 </div>
               </div>
@@ -214,6 +218,7 @@ function PriceAProduct() {
                     type="text"
                     id="form6Example14"
                     className="form-control"
+                    defaultValue="1-Nov-2023"
                   />
                 </div>
               </div>
@@ -247,24 +252,44 @@ function PriceAProduct() {
                 </div>
               </div>
             </div>
+        
+        <div className = "row mb-4">
+            <div className="form-check col">
+                <label class="form-check-label active" for="flexCheckDefault">
+                    Cost Based Pricing
+                </label>
+                <input class="form-check-input" type="checkbox" checked value="1" id="flexCheckDefault"/>
+            </div>
+            <div className="form-check col">
+                <label className="form-label" for="form6Example14">
+                        Margin % 
+                    </label>
+                    <input
+                        type="text"
+                        id="form6Example14"
+                        className="form-control w-50"
+                        defaultValue="10%"
+                    />
+                </div>
+        </div>
 
             <div className="row mb-4">
             <div class="form-check col">
                 <label class="form-check-label active" for="flexCheckDefault">
                     Allow Manual Ajdustment
                 </label>
-                <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                <input class="form-check-input" type="checkbox" checked value="1" id="flexCheckDefault"/>
                 </div>
               <div class="form-check col">
                 <label class="form-check-label active" for="flexCheckDefault">
                     Active
                 </label>
-                <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                <input class="form-check-input" type="checkbox" checked value="1" id="flexCheckDefault"/>
                 </div>
             </div>
 
             <a className="btn btn-primary btn-block mb-4" onClick={submitPrice}>
-              Submit
+              Proceed To Price Metrics
             </a>
           </form>
         </div>

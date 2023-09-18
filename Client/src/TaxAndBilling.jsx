@@ -6,7 +6,6 @@ function TaxAndBilling(){
 
     const submit = (e) =>{
         e.preventDefault()
-        alert("Form Submitted Successfully")
         navigate('/SummaryCreatePrice')
     }
 
