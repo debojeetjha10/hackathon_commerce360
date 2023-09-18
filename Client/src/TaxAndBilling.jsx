@@ -7,26 +7,25 @@ function TaxAndBilling(){
     const submit = (e) =>{
         e.preventDefault()
         alert("Form Submitted Successfully")
-        navigate('/home')
+        navigate('/SummaryCreatePrice')
     }
 
     const backToCreateMetric = (e) => {
         e.preventDefault()
-        navigate('/PriceDefault')
+        navigate('/CreateMetric')
     }
 
     return (
         <div className="justify-content-center vh-100 m-4">
             <div className={`row w-100`}>
-                <h4 className="text-primary">Tax And Billing</h4>
-                <hr className="text-dark"/>
-                <div className="w-75 m-auto p-5 border border-dark rounded mt-5">
+                <h5 className="text-primary">Tax And Billing</h5>
+                <div className="w-100 m-auto p-3 border rounded">
                     <form className="h6">
                         <div className="row mb-4">
                             <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example1">Taxable?</label>
-                                <select className="w-100" style={{height:"35px"}} id="cars" name="cars">
+                                <select className="w-100 mt-2" style={{height:"35px"}} id="cars" name="cars">
                                     <option value="yes">yes</option>
                                     <option value="no">no</option>
                                 </select>
@@ -35,20 +34,22 @@ function TaxAndBilling(){
                             <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example2">Tax Included?</label>
-                                <select className="w-100" style={{height:"35px"}} id="cars" name="cars">
+                                <select className="w-100 mt-2" style={{height:"35px"}} id="cars" name="cars">
                                     <option value="yes">yes</option>
                                     <option value="no">no</option>
                                 </select>
                             </div>
                             </div>
-                        </div>
-                        <div className="row mb-4">
                             <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example1">Tax Code</label>
                                 <input type="text" id="form6Example2" className="form-control" />
                             </div>
                             </div>
+
+                        </div>
+                        <div className="row mb-4">
+                            
                             <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example2">Billing Rule</label>
@@ -60,9 +61,7 @@ function TaxAndBilling(){
                                 </select>
                             </div>
                             </div>
-                        </div>
-
-                        <div className="col">
+                            <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example2">Billing Frequency</label>
                                 <select className="w-100" style={{height:"35px"}} id="cars" name="cars">
@@ -72,7 +71,76 @@ function TaxAndBilling(){
                                     <option value="Quarterly">Quarterly</option>
                                 </select>
                             </div>
+                        </div>
+                        
+                        
+                        
+                        {/* closing row */}
+                        </div>
+                        
+                        <h5 className="text-primary mb-4">Finance And Revenue</h5>
+                        <div className="row mb-4">
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example1">A/R Account</label>
+                                <input type="text" id="form6Example2" className="form-control" />
                             </div>
+                            </div>
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Deferred Revenue Account</label>
+                                <input type="text" id="form6Example2" className="form-control" />
+                            </div>
+                            </div>
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example1">Recognized Rev Account</label>
+                                <input type="text" id="form6Example2" className="form-control" />
+                            </div>
+                            </div>
+                        </div>
+                        <div className="row mb-4">
+                            
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Unbilled A/R Account</label>
+                                <input type="text" id="form6Example2" className="form-control" />
+                            </div>
+                            </div>
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Revenue Recognition Policy</label>
+                                <select className="w-100 mt-3" style={{height:"35px"}} id="cars" name="cars">
+                                    <option value="Immediate">Immediate</option>
+                                    <option value="As Invoiced">As Invoiced</option>
+                                    <option value="Manual">Manual</option>
+                                    <option value="Prepaid">Prepaid</option>
+                                    <option value="Usage">Usage</option>
+                                    <option value="Prepaid">Milestone</option>
+                                    <option value="True-up">True-up</option>
+                                    <option value="Deferred Revenue Subscription">Deferred Revenue Subscription</option>
+                                    <option value="Non-deferred Revenue Subscription">Non-deferred Revenue Subscription</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">RevenueSplit/Merge Policy</label>
+                                <select className="w-100 mt-3" style={{height:"35px"}} id="cars" name="cars">
+                                    <option value="SSP">SSP</option>
+                                    <option value="SSP Floor & Ceiling">SSP Floor & Ceiling</option>
+                                </select>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div className="row mb-4">
+                        
+                            
+                        </div>
+
+                        
+
                         <br/>
                         <div className="row mb-4">
                             <div className="col">

@@ -14,6 +14,8 @@ import CreatePriceRules from "../pages/pricerules/createpricerules";
 import AllPricings from "../AllPrincings";
 import AllPolicies from "../AllPolicies";
 import NavBar from "../NavBar";
+import SummaryCreatePrice from "../SummaryCreatePrice";
+import ViewPriceRule from "../ViewPriceRule";
 
 export const privateRoutes = [
   {
@@ -47,6 +49,11 @@ export const privateRoutes = [
     children: [],
   },
   {
+    path: "/ViewPriceRule",
+    element: <ViewPriceRule />,
+    children: [],
+  },
+  {
     path: "/PriceAProduct",
     element: <PriceAProduct />,
     children: [],
@@ -74,6 +81,11 @@ export const privateRoutes = [
   {
     path: "/FinanceAndRevenue",
     element: <FinanceAndRevenue />,
+    children: [],
+  },
+  {
+    path: "/SummaryCreatePrice",
+    element: <SummaryCreatePrice />,
     children: [],
   },
 ];

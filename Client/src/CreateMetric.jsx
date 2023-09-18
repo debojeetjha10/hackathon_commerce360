@@ -7,7 +7,7 @@ function CreateMetric() {
 
     const submitMetric = (e) => {
         e.preventDefault()
-        navigate('/ChannelsAndAudience')
+        navigate('/TaxAndBilling')
     }
 
     const backToPriceAProduct = (e) => {
@@ -16,54 +16,171 @@ function CreateMetric() {
     }
 
     return (
+        <>
         <div className="justify-content-center vh-100 m-4">
             <div className={`row w-100`}>
-                <h4 className="text-primary">Create Price Metric</h4>
-                <hr className="text-dark"/>
-                <div className="w-75 m-auto p-5 border border-dark rounded mt-5">
+                <div className="w-100 m-auto p-3 border rounded">
                     <form className="h6">
-                        <div className="row mb-4">
+                    <h5 className="text-primary mb-3">Price Metric for <span className="text-dark">Quantity</span> </h5><br/>
+                        <div className="row">
                             <div className="col">
-                            <div className="form-outline">
-                                <label className="form-label" for="form6Example1">PriceList</label>
-                                <input type="text" id="form6Example1" className="form-control" />
-                            </div>
+                                <label className="form-label" for="form6Example3">From</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="0"
+                                />
                             </div>
                             <div className="col">
-                            <div className="form-outline">
-                                <label className="form-label" for="form6Example2">Product</label>
-                                <input type="text" id="form6Example2" className="form-control" />
+                                <label className="form-label" for="form6Example3">To</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="100"
+                                />
                             </div>
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">Unit Price/Discount %</label><br/>
+                                <input
+                                    type="text"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="0%"
+                                />
+                            </div>
+                        
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">From</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="101"
+                                />
+                            </div>
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">To</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="1000"
+
+                                />
+                            </div>
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">Unit Price/Discount %</label><br/>
+                                <input
+                                    type="text"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="10%"
+                                />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">From</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="1001"
+                                />
+                            </div>
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">To</label><br/>
+                                <input
+                                    type="number"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="10000"
+
+                                />
+                            </div>
+                            <div className="col">
+                                <label className="form-label" for="form6Example3">Unit Price/Discount %</label><br/>
+                                <input
+                                    type="text"
+                                    id="form6Example8"
+                                    className="form-control"
+                                    defaultValue="20%"
+                                />
                             </div>
                         </div>
 
-                        <div className="row mb-4">
-                            <div className="col">
-                            <div className="form-outline mb-4">
-                                <label className="form-label" for="form6Example3">Charge type</label><br/>
-                                <select className="w-100" style={{height:"35px"}} id="cars" name="cars">
-                                    <option value="Standard Price">Standard Price</option>
-                                    <option value="License Fee">License Fee</option>
-                                    <option value="Subscription Fee">Subscription Fee</option>
-                                    <option value="Installation Fee">Installation Fee</option>
-                                    <option value="Maintenance Fee">Maintenance Fee</option>
-                                    <option value="Usage Fee">Usage Fee</option>
-                                </select>
-                            </div>
-                            </div>
-                            <div className="col">
-                            <div className="form-outline mb-4">
-                                <label className="form-label" for="form6Example4">Price Type</label>
-                                <select style={{height:"35px"}} className="w-100" id="cars" name="cars">
-                                    <option value="One Time">One Time</option>
-                                    <option value="Recurring">Recurring</option>
-                                    <option value="Usage">Usage</option>
-                                </select>
-                            </div>
+
+                        <div className="row">
+
+                        <h5 className="text-primary mt-5 mb-5">Channels and Audience</h5>
+
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example1">Channels</label><br/>
+                                
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                    <label class="form-check-label" for="inlineCheckbox1">CSP</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                    <label class="form-check-label" for="inlineCheckbox1">VL</label>
+
                             </div>
                         </div>
 
-                        <div className="row mb-4">
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Audience</label><br/>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <label class="form-check-label" for="inlineCheckbox1">Commercial</label>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <label class="form-check-label" for="inlineCheckbox1">GOV</label>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <label class="form-check-label" for="inlineCheckbox1">EDU</label>
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                <label class="form-check-label" for="inlineCheckbox1">CHARITY</label>
+                            </div>
+                        </div>
+
+                        <h5 className="text-primary mt-5 mb-5">Price Defaults</h5>
+
+                        <div className="row">
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example1">Default Quanitity</label>
+                                <input type="text" id="form6Example2" className="form-control"/>
+                            </div>
+                        </div>
+
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Default Selling Term</label>
+                                <input type="text" id="form6Example2" className="form-control"/>
+                            </div>
+                        </div>
+
+                        
+                        </div>
+
+                        <div className="row mt-5">
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Min Usage Quantity</label>
+                                <input type="text" id="form6Example2" className="form-control"/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example1">Auto Renew</label>
+                                <input type="text" id="form6Example2" className="form-control"/>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div className="row mt-3">
                             <div className="col">
                                 <div className="form-outline mb-4">
                                 <a className="btn btn-primary btn-block mb-4" onClick={submitMetric}>Submit</a>
@@ -75,11 +192,12 @@ function CreateMetric() {
                                 </div>
                             </div>
                         </div>
-
+                    <div/>
                     </form>
                 </div>
             </div>
         </div>
+    </>
     )
 }
 

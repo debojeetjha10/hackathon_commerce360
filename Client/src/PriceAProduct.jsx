@@ -13,14 +13,25 @@ function PriceAProduct() {
         <div className="justify-content-center vh-150 m-4">
             <div className={`row w-100`}>
                 <h4 className="text-primary">Price A Product</h4>
-                <hr className="text-dark"/>
-                <div className="w-75 m-auto p-5 border border-dark rounded">
+                <div className="w-100 m-auto p-3 border rounded">
                     <form className="h6">
                         <div className="row mb-4">
                             <div className="col">
                             <div className="form-outline">
                                 <label className="form-label" for="form6Example1">PriceList</label>
-                                <input type="text" id="form6Example1" className="form-control" />
+                                <select
+                                    className="w-100 mt-2"
+                                    style={{ height: "35px" }}
+                                    id="cars"
+                                    name="cars"
+                                >
+                                    <option value="Standard Price">PriceList/North America</option>
+                                    <option value="License Fee">License Fee</option>
+                                    <option value="Subscription Fee">Subscription Fee</option>
+                                    <option value="Installation Fee">Installation Fee</option>
+                                    <option value="Maintenance Fee">Maintenance Fee</option>
+                                    <option value="Usage Fee">Usage Fee</option>
+                                </select>
                             </div>
                             </div>
                             <div className="col">
@@ -29,30 +40,27 @@ function PriceAProduct() {
                                 <input type="text" id="form6Example2" className="form-control" />
                             </div>
                             </div>
+                            <div className="col">
+                            <div className="form-outline">
+                                <label className="form-label" for="form6Example2">Charge Type</label>
+                                <select
+                                    className="w-100 mt-2"
+                                    style={{ height: "35px" }}
+                                    id="cars"
+                                    name="cars"
+                                >
+                                    <option value="Standard Price">Standard Price</option>
+                                    <option value="License Fee">License Fee</option>
+                                    <option value="Subscription Fee">Subscription Fee</option>
+                                    <option value="Installation Fee">Installation Fee</option>
+                                    <option value="Maintenance Fee">Maintenance Fee</option>
+                                    <option value="Usage Fee">Usage Fee</option>
+                                </select>
+                            </div>
+                            </div>
                         </div>
 
             <div className="row mb-4">
-              <div className="col">
-                <div className="form-outline mb-4">
-                  <label className="form-label" for="form6Example3">
-                    Charge type
-                  </label>
-                  <br />
-                  <select
-                    className="w-100"
-                    style={{ height: "35px" }}
-                    id="cars"
-                    name="cars"
-                  >
-                    <option value="Standard Price">Standard Price</option>
-                    <option value="License Fee">License Fee</option>
-                    <option value="Subscription Fee">Subscription Fee</option>
-                    <option value="Installation Fee">Installation Fee</option>
-                    <option value="Maintenance Fee">Maintenance Fee</option>
-                    <option value="Usage Fee">Usage Fee</option>
-                  </select>
-                </div>
-              </div>
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example4">
@@ -70,9 +78,6 @@ function PriceAProduct() {
                   </select>
                 </div>
               </div>
-            </div>
-
-            <div className="row mb-4">
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example5">
@@ -112,22 +117,6 @@ function PriceAProduct() {
             <div className="row mb-4">
               <div className="col">
                 <div className="form-outline mb-4">
-                  <label className="form-label" for="form6Example7">
-                    Active
-                  </label>
-                  <select
-                    style={{ height: "35px" }}
-                    className="w-100"
-                    id="cars"
-                    name="cars"
-                  >
-                    <option value="True">True</option>
-                    <option value="False">False</option>
-                  </select>
-                </div>
-              </div>
-              <div className="col">
-                <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example8">
                     Description
                   </label>
@@ -138,9 +127,6 @@ function PriceAProduct() {
                   />
                 </div>
               </div>
-            </div>
-
-            <div className="row mb-4">
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example9">
@@ -168,8 +154,9 @@ function PriceAProduct() {
             </div>
 
             <div className="row mb-4">
+              
               <div className="col">
-                <div className="form-outline mb-4">
+                <div className="form-outline mb-4 mt-2">
                   <label className="form-label" for="form6Example11">
                     Price UOM
                   </label>
@@ -202,9 +189,6 @@ function PriceAProduct() {
                   />
                 </div>
               </div>
-            </div>
-
-            <div className="row mb-4">
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example13">
@@ -217,10 +201,14 @@ function PriceAProduct() {
                   />
                 </div>
               </div>
+            </div>
+
+            <div className="row mb-4">
+              
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example14">
-                    Effective Date
+                    Effective Start Date
                   </label>
                   <input
                     type="text"
@@ -229,13 +217,10 @@ function PriceAProduct() {
                   />
                 </div>
               </div>
-            </div>
-
-            <div className="row mb-4">
               <div className="col">
                 <div className="form-outline mb-4">
                   <label className="form-label" for="form6Example15">
-                    Eff Date End
+                    Effective Date End
                   </label>
                   <input
                     type="text"
@@ -245,9 +230,9 @@ function PriceAProduct() {
                 </div>
               </div>
               <div className="col">
-                <div className="form-outline mb-4">
-                  <label className="form-label" for="form6Example16">
-                    Allow Manual Ajustment
+                <div className="form-outline mb-4 mt-2">
+                <label className="form-label" for="form6Example11">
+                    Select Price Metric
                   </label>
                   <select
                     style={{ height: "35px" }}
@@ -255,11 +240,27 @@ function PriceAProduct() {
                     id="cars"
                     name="cars"
                   >
-                    <option value="True">True</option>
-                    <option value="False">False</option>
+                    <option value="Each">Quantity Metric</option>
+                    <option value="Hour">Usage Metric</option>
+                    <option value="Day">Custom Metric</option>
                   </select>
                 </div>
               </div>
+            </div>
+
+            <div className="row mb-4">
+            <div class="form-check col">
+                <label class="form-check-label active" for="flexCheckDefault">
+                    Allow Manual Ajdustment
+                </label>
+                <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                </div>
+              <div class="form-check col">
+                <label class="form-check-label active" for="flexCheckDefault">
+                    Active
+                </label>
+                <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                </div>
             </div>
 
             <a className="btn btn-primary btn-block mb-4" onClick={submitPrice}>

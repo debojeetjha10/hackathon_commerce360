@@ -42,7 +42,7 @@ function LandingPage() {
               <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/PriceAProduct">Price a Product</Link></h4>
             </li>
             <li>
-              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="">Create Price Rules</Link></h4>
+              <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="/ViewPriceRule">View Price Rules</Link></h4>
             </li>
             <li>
               <h4><Link classNameName="text-dark" style={{textDecoration:'none',color:"black"}} to="">Create New Promotion</Link></h4>
