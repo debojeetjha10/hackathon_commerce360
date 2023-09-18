@@ -6,6 +6,7 @@ const ProductHeadings = [
   "Product Code",
   "Product Type",
   "Product Family",
+  "Action"
 ];
 const products = [
   {
@@ -54,12 +55,12 @@ const products = [
 
 function ViewAllProduct() {
   return (
-      <div className="full-screen">
-          <h2 className="text-primary text-center">SEE ALL PRODUCTS</h2>
+      <div className="full-screen-cropped border rounded border-info p-2">
+        <button type="button" class="btn btn-primary">Create a New product</button>
+          <h2 className="text-primary text-center">All Products</h2>
       <Table responsive>
         <thead>
           <tr>
-            <th>#</th>
             {ProductHeadings.map((key, index) => (
               <th key={index}>{key}</th>
             ))}
@@ -67,13 +68,13 @@ function ViewAllProduct() {
         </thead>
         <tbody>
           {products.map((product, index) => (
-            <tr key="index">
-              <td>{index}</td>
+            <tr key="index" className="p-1rem">
               <td>{product.name}</td>
               <td>{product.code}</td>
 
               <td>{product.type}</td>
               <td>{product.family}</td>
+              <button  type="button" class="btn btn-link" >EDIT/VIEW</button>
             </tr>
           ))}
         </tbody>

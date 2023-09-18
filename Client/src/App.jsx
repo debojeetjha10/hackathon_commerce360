@@ -18,6 +18,7 @@ import PriceDefault from './PriceDefaults';
 import TaxAndBilling from './TaxAndBilling';
 import FinanceAndRevenue from './FinanceAndRevenue';
 import ViewAllProduct from './pages/product/viewALLProducts';
+import CreateABundle from './pages/createBundle';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path= '/TaxAndBilling' element = {<TaxAndBilling/>}></Route>
         <Route path='/FinanceAndRevenue' element={<FinanceAndRevenue />}></Route>
         <Route path='/viewallproduct' element={<ViewAllProduct />}> </Route>
+        <Route path='/bundlecreation' element={<CreateABundle />}> </Route>
       </Routes>
       <Footer />
     </BrowserRouter>

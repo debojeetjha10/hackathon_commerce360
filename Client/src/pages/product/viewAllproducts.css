@@ -1,4 +1,6 @@
-.full-screen {
-    height: 100vh;
-    width: 100vw ;
+.full-screen-cropped {
+    width: 80vw ;
+    margin:auto;
+    margin-bottom: 20vh;
+    margin-top: 5vh;
 }

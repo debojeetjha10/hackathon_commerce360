@@ -3,10 +3,20 @@ import "./styles.css";
 import  {useForm} from 'react-hook-form'
 function CreateNewProduct() {
     const onSubmit = data => console.log(data)
-    const { register, handleSubmit} = useForm()
+    const { register, handleSubmit} = useForm({
+      defaultValues: {
+        productName: "Bundle Confetti",
+        ProductCode:"MSA-00898b",
+        productCatalog: "Office",
+        productFamily: "Office-365",
+        productFamilyCode: "MSA-0089UU",
+        productConfiguration: "Bundle",
+        productDescription: "A new Bundle product for office"
+      }
+    })
   return (
     <div className="createnewproduct">
-      <h2>Create a New Product</h2>
+      <h2 className="text-primary">Create a New Product</h2>
       <p>Fill in the Details below</p>
       <form className="newproductform">
         <label>
@@ -42,7 +52,7 @@ function CreateNewProduct() {
           <input  type="file" />
         </label>
         <div className="createButton">
-          <button type="submit" onClick={handleSubmit(onSubmit)}> Create </button>
+       <a href="/bundlecreation" class="btn btn-primary"> Create </a>
         </div>
         <datalist id="catalog">
           <option value="AZURE" />
