@@ -17,6 +17,7 @@ import ChannelsAndAudience from './ChannelsAndAudience'
 import PriceDefault from './PriceDefaults';
 import TaxAndBilling from './TaxAndBilling';
 import FinanceAndRevenue from './FinanceAndRevenue';
+import ViewAllProduct from './pages/product/viewALLProducts';
 
 
 function App() {
@@ -37,8 +38,8 @@ function App() {
         <Route path= '/ChannelsAndAudience' element = {<ChannelsAndAudience/>}></Route>
         <Route path= '/PriceDefault' element = {<PriceDefault/>}></Route>
         <Route path= '/TaxAndBilling' element = {<TaxAndBilling/>}></Route>
-        <Route path= '/FinanceAndRevenue' element = {<FinanceAndRevenue/>}></Route>
-
+        <Route path='/FinanceAndRevenue' element={<FinanceAndRevenue />}></Route>
+        <Route path='/viewallproduct' element={<ViewAllProduct />}> </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
